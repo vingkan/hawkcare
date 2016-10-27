@@ -1,26 +1,32 @@
+html, body{
+	font-size: 0;
+	font-family: 'Droid Sans', sans-serif;
+}
+
 table {
+	font-size: 18px;
 	width: 100%;
 }
 
 tr {
-	background: gray;
+	background: #EEEEEE;
 	color: black;
 }
 
 th, td {
-	padding: 10px 15px;
+	padding: 10px;
 	height: 50px;
 	line-height: 50px;
 	vertical-align: middle !important;
-	text-align: center;
+	text-align: left;
 }
 
 th {
-	background: blue;
+	padding: 0 10px;
 }
 
 td {
-	background: orange;
+
 }
 
 div.dashboard-cell {
@@ -37,12 +43,36 @@ div.dashboard-image {
 	border-radius: 50%;
 }
 
+/*tr:nth-child(1){
+	position: fixed;
+	width: 100%;
+}
+
+tr:nth-child(2) td{
+	padding-top: 60px;
+}*/
+
 th:nth-child(1), td:nth-child(1) {
 	width: 50px;
 }
 
-th:nth-child(2), td:nth-child(2) {
-	text-align: left;
-	width: 100px;
-	overflow-x: ellipsis;
+td div.dashboard-cell {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+tr:nth-child(even) {
+	background: #DEDEDE;
+}
+
+tr:nth-child(1) {
+	background: #1A1A1A;
+	color: white;
+	font-weight: bold;
+}
+
+tr:hover {
+	background: #006ba6;
+	color: white;
 }
