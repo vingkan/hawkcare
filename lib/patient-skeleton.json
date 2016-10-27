@@ -1,0 +1,12 @@
+{
+	"name": "Leona Hanson",
+	"age": 34,
+	"history": {
+		"last_visit": "10/26/2016",
+		"asthma": false,
+		"vaccines": {
+			"flu": true,
+			"zika": false
+		}
+	}
+}
