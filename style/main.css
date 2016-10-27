@@ -1,0 +1,48 @@
+table {
+	width: 100%;
+}
+
+tr {
+	background: gray;
+	color: black;
+}
+
+th, td {
+	padding: 10px 15px;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle !important;
+	text-align: center;
+}
+
+th {
+	background: blue;
+}
+
+td {
+	background: orange;
+}
+
+div.dashboard-cell {
+
+}
+
+div.dashboard-image {
+	width: 50px;
+	height: 50px;
+	background-size: 50px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+th:nth-child(1), td:nth-child(1) {
+	width: 50px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+	text-align: left;
+	width: 100px;
+	overflow-x: ellipsis;
+}
